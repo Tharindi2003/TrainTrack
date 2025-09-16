@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borcelle - Sign Up</title>
+    <link href="Signin.css" rel="stylesheet">
+
+    </head>
+<body>
+    <div class="container">
+        <!-- Left Section - Sign Up Form -->
+        <div class="left-section">
+            
+            </nav>
+
+            <!-- Sign Up Form -->
+            <div class="signup-form">
+                <h1 class="form-title">Sign up</h1>
+                <p class="form-subtitle">Create your account to get started</p>
+                
+                <div class="error-message" id="errorMessage">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span id="errorText">Please fix the errors below.</span>
+                </div>
+
+                <div class="success-message" id="successMessage">
+                    <i class="fas fa-check-circle"></i>
+                    Account created successfully! Redirecting...
+                </div>
+
+                <form id="signupForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="input-container">
+                                <input type="text" class="form-input" id="firstName" placeholder="First Name" required>
+                                <i class="fas fa-user input-icon"></i>
+                            </div>
+                            <div class="field-error" id="firstNameError">First name is required</div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-container">
+                                <input type="text" class="form-input" id="lastName" placeholder="Last Name" required>
+                                <i class="fas fa-user input-icon"></i>
+                            </div>
+                            <div class="field-error" id="lastNameError">Last name is required</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-container">
+                            <input type="email" class="form-input" id="email" placeholder="Email Address" required>
+                            <i class="fas fa-envelope input-icon"></i>
+                        </div>
+                        <div class="field-error" id="emailError">Please enter a valid email address</div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-container">
+                            <input type="text" class="form-input" id="username" placeholder="Username" required>
+                            <i class="fas fa-at input-icon"></i>
+                        </div>
+                        <div class="field-error" id="usernameError">Username must be at least 3 characters</div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-container">
+                            <input type="password" class="form-input" id="password" placeholder="Password" required>
+                            <i class="fas fa-lock input-icon"></i>
+                            <i class="fas fa-eye password-toggle" id="passwordToggle"></i>
+                        </div>
+                        <div class="field-error" id="passwordError">Password must be at least 8 characters</div>
+                        <div class="password-strength" id="passwordStrength">
+                            <div class="strength-bar">
+                                <div class="strength-fill"></div>
+                            </div>
+                            <div class="strength-text">Password strength</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-container">
+                            <input type="password" class="form-input" id="confirmPassword" placeholder="Confirm Password" required>
+                            <i class="fas fa-lock input-icon"></i>
+                            <i class="fas fa-eye password-toggle" id="confirmPasswordToggle"></i>
+                        </div>
+                        <div class="field-error" id="confirmPasswordError">Passwords do not match</div>
+                    </div>
+
+                    <div class="form-options">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="agreeTerms" required>
+                            <label for="agreeTerms">
+                                I agree to the <a href="#" target="_blank">Terms of Service</a> and 
+                                <a href="#" target="_blank">Privacy Policy</a>
+                            </label>
+                        </div>
+                        <div class="field-error" id="termsError">You must agree to the terms</div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="newsletter">
+                            <label for="newsletter">
+                                Subscribe to our newsletter for updates and promotions
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="signup-btn" id="signupBtn">
+                        <span class="loading-spinner" id="loadingSpinner"></span>
+                        <span id="btnText">Create Account</span>
+                    </button>
+                </form>
+
+                <div class="login-link">
+                    Already have an account? <a href="Signin.html">Log in</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section - Welcome -->
+        <div class="right-section">
+            <div class="curved-shape"></div>
+            <div class="floating-shapes">
+                <div class="shape"></div>
+                <div class="shape"></div>
+                <div class="shape"></div>
+                <div class="shape"></div>
+                <div class="shape"></div>
+            </div>
+            <div class="welcome-content">
+                <h2 class="welcome-title">Join Us<br>Today!</h2>
+                <p class="welcome-subtitle">Start your journey with us</p>
+            </div>
+        </div>
+    </div>
